@@ -143,8 +143,19 @@
             padding: calc(25% + 50px) 0 0 50px; /* Align with "Steven Schepanski" */
         }
 
+        .say-hi {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Use the default text color */
+        }
+
+        /* Container for the main content */
+        .main-container {
+            position: relative;
+        }
+
         /* Impressum Section */
         .impressum {
+            position: absolute;
             bottom: 10px;
             right: 10px;
             font-size: 12px; /* Adjust font size as needed */
@@ -182,7 +193,7 @@
     <!-- Intro Section -->
     <div class="intro">
         <h3 style="margin-bottom: 0;">Intro</h3>
-        <p>
+        <p style="margin-bottom: 0;"> <!-- Adjust the margin as needed -->
             Hi, I am Steven, born in Westphalia and<br>
             based in Berlin. When I am not analyzing<br>
             data full-time, you will find me doing sports or gaming.
@@ -213,9 +224,12 @@
         <a href="mailto:your@email.com">Say hi.</a>
     </div>
 
-    <!-- Impressum Section -->
-    <div class="impressum">
-        <p>Impressum: Your Impressum content here.</p>
+    <!-- Container for the main content -->
+    <div class="main-container">
+        <!-- Impressum Section -->
+        <div class="impressum">
+            <p>Impressum: Your Impressum content here.</p>
+        </div>
     </div>
 </body>
 </html>
