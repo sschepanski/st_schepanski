@@ -37,7 +37,7 @@
         header a {
             color: white; /* Set the icon color to white */
             text-decoration: none; /* Remove hyperlink underline */
-            margin-right: 10px; /* Add space between icons */
+            margin-right: 25px; /* Add space between icons */
             font-size: 1.5em; /* Increased icon size */
         }
 
@@ -48,13 +48,13 @@
         /* Centered Text */
         .center-text {
             text-align: left;
-            padding: calc(25% + 50px) 0 0 50px; /* Adjusted padding */
+            padding: 50px 0 0 calc(33.33% + 20px); /* Adjusted padding */
         }
 
         .custom-heading {
-            font-size: 2em; /* Double the font size */
+            font-size: 36px; /* Double the font size */
             margin: 0; /* Remove default margins */
-            line-height: 1.2; /* Adjust line height as needed */
+            line-height: 1; /* Adjust line height as needed */
         }
 
         .custom-heading span {
@@ -105,15 +105,17 @@
         }
 
         .loading-bar {
-            width: 50%;
+            width: 100%; /* Double the width */
             background-color: white;
-            position: relative;
+            text-align: center; /* Center the label */
+            padding: 5px 0; /* Add padding for better visual appearance */
         }
 
         .loading-fill {
             height: 10px;
-            background-color: grey;
+            background-color: green;
             width: 65%; /* Set the percentage of loading */
+            transition: width is ease-in-out; /* Add a smooth transition effect */
         }
 
         /* Email Section */
@@ -143,10 +145,10 @@
     <header>
         <h1>Steven Schepanski</h1>
         <div>
-            <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
-            <a href="#email"><i class="fas fa-envelope"></i></a>
-            <a href="#github"><i class="fab fa-github"></i></a>
-            <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/sschepanski"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/steven-schepanski"><i class="fab fa-linkedin"></i></a>
         </div>
     </header>
 
@@ -181,6 +183,7 @@
     <div class="projects">
         <h3>Data Science Projects</h3>
         <div class="loading-bar">
+            <p>Entering Loading Bar...</p>
             <div class="loading-fill"></div>
         </div>
         <ol>
