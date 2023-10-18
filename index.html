@@ -20,23 +20,25 @@
         header {
             background-color: rgb(227, 83, 53);
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
+            top: 25px; /* Adjusted distance from the top */
+            left: 25px; /* Adjusted distance from the left */
+            width: calc(100% - 50px); /* Adjusted width */
             display: flex;
             justify-content: space-between;
-            padding: 50px; /* Increased padding for more space */
+            align-items: center; /* Vertically align items */
+            padding: 25px; /* Adjusted padding for more space */
         }
 
         header h1 {
-            margin: 50px 0 0 50px; /* Top, right, bottom, left margin */
+            margin: 0;
         }
 
         /* Add this to your existing styles */
         header a {
             color: white; /* Set the icon color to white */
             text-decoration: none; /* Remove hyperlink underline */
-            margin-right: 50px; /* Add space between icons */
+            margin-right: 10px; /* Add space between icons */
+            font-size: 1.5em; /* Increased icon size */
         }
 
         header a:hover {
@@ -46,7 +48,7 @@
         /* Centered Text */
         .center-text {
             text-align: left;
-            padding: 50px 0 0 calc(25% + 50px); /* Adjust padding as needed */
+            padding: calc(25% + 50px) 0 0 50px; /* Adjusted padding */
         }
 
         .custom-heading {
@@ -68,7 +70,7 @@
         /* Intro Section */
         .intro {
             text-align: left;
-            padding: 20px 0 0 calc(25% + 50px); /* Align with "Data Scientist" */
+            padding: 20px 0 0 calc(25% + 50px); /* Adjusted padding */
         }
 
         .intro p {
@@ -98,25 +100,26 @@
         }
 
         /* Loading Bar */
+        .projects {
+            padding: calc(25% + 50px) 0 0 50px; /* Align with "Steven Schepanski" */
+        }
+
         .loading-bar {
             width: 50%;
             background-color: white;
+            position: relative;
         }
 
         .loading-fill {
             height: 10px;
-            background-color: white;
-        }
-
-        /* Projects Section */
-        .projects {
-            padding: 20px 0;
+            background-color: grey;
+            width: 65%; /* Set the percentage of loading */
         }
 
         /* Email Section */
         .say-hi {
             text-align: left;
-            padding: 20px 0 0 calc(25% + 50px); /* Align with "Data Scientist" */
+            padding: 20px 0 0 calc(25% + 50px); /* Align with "Steven Schepanski" */
         }
 
         .say-hi button {
@@ -127,15 +130,11 @@
             cursor: pointer;
         }
 
-        /* Impressum Section */
         .impressum {
-            text-align: right;
-            padding: 20px 50px;
-            display: none; /* Initially hide */
-        }
-
-        .show-impressum:checked + .impressum {
-            display: block; /* Show when checkbox is checked */
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px; /* Adjust font size as needed */
         }
     </style>
 </head>
@@ -144,9 +143,9 @@
     <header>
         <h1>Steven Schepanski</h1>
         <div>
-            <a href="#portfolio"><i class="fas fa-briefcase"></i></a> |
-            <a href="#email"><i class="fas fa-envelope"></i></a> |
-            <a href="#github"><i class="fab fa-github"></i></a> |
+            <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
+            <a href="#email"><i class="fas fa-envelope"></i></a>
+            <a href="#github"><i class="fab fa-github"></i></a>
             <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
         </div>
     </header>
@@ -198,24 +197,8 @@
     </div>
 
     <!-- Impressum Section -->
-    <input type="checkbox" id="show-impressum" class="show-impressum">
     <div class="impressum">
-        <h3>Impressum</h3>
-        <p>Angaben gemäß § 5 TMG:</p>
-
-        <p>Vor- und Nachname<br>
-        Straße<br>
-        PLZ Ort<br>
-
-        <p>Kontakt:</p>
-        <p>E-Mail: your@email.com</p>
-
-        <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</p>
-        <p>Vor- und Nachname<br>
-        Straße<br>
-        PLZ Ort</p>
-
-        </p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+        <p>Impressum: Your Impressum content here.</p>
     </div>
 </body>
 </html>
