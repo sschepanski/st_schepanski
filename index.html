@@ -20,7 +20,7 @@
         header {
             background-color: rgb(227, 83, 53);
             position: fixed;
-            top: 25px; /* Adjusted distance from the top */
+            top: 0; /* Adjusted distance from the top */
             left: 25px; /* Adjusted distance from the left */
             width: calc(100% - 50px); /* Adjusted width */
             display: flex;
@@ -52,13 +52,14 @@
         }
 
         .custom-heading {
-            font-size: 36px; /* Double the font size */
+            font-size: 72px; /* Increased font size */
             margin: 0; /* Remove default margins */
             line-height: 1; /* Adjust line height as needed */
         }
 
         .custom-heading span {
             display: block; /* Each line on a new line */
+            margin-bottom: 0.5em; /* Adjusted space between lines */
         }
 
         /* Photos Section */
@@ -99,9 +100,13 @@
             }
         }
 
-        /* Loading Bar */
+        /* Data Science Projects Section */
         .projects {
             padding: calc(25% + 50px) 0 0 50px; /* Align with "Steven Schepanski" */
+        }
+
+        h3 {
+            font-size: 36px; /* Adjusted font size */
         }
 
         .loading-bar {
@@ -109,13 +114,24 @@
             background-color: white;
             text-align: center; /* Center the label */
             padding: 5px 0; /* Add padding for better visual appearance */
+            position: relative;
+            margin-top: 20px; /* Adjusted margin */
         }
 
         .loading-fill {
             height: 10px;
-            background-color: green;
+            background-color: grey; /* Adjusted color */
             width: 65%; /* Set the percentage of loading */
-            transition: width is ease-in-out; /* Add a smooth transition effect */
+            transition: width 1s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        .loading-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
         }
 
         /* Email Section */
@@ -132,6 +148,7 @@
             cursor: pointer;
         }
 
+        /* Impressum Section */
         .impressum {
             position: fixed;
             bottom: 10px;
@@ -155,8 +172,8 @@
     <!-- Centered Text Section -->
     <div class="center-text">
         <h2 class="custom-heading">
-            <span>Data Scientist, Bioinformatics</span><br>
-            <span>Expert & Psychologist</span><br>
+            <span>Data Scientist, Bioinformatics</span>
+            <span>Expert & Psychologist</span>
             <span>from Berlin.</span>
         </h2>
     </div>
@@ -183,7 +200,7 @@
     <div class="projects">
         <h3>Data Science Projects</h3>
         <div class="loading-bar">
-            <p>Entering Loading Bar...</p>
+            <p class="loading-text">65%</p>
             <div class="loading-fill"></div>
         </div>
         <ol>
