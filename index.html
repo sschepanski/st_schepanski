@@ -111,12 +111,14 @@
         }
 
         .loading-bar {
-            width: 100%; /* Double the width */
+            width: 50%; /* Adjust the width */
             background-color: white;
             text-align: center; /* Center the label */
             padding: 5px 25px; /* Add padding for better visual appearance */
             position: relative;
             margin-top: 20px; /* Adjusted margin */
+            margin-left: auto; /* Center the laoding bar with auto left and right margins*/
+            margin-right: auto;
         }
 
         .loading-fill {
@@ -141,17 +143,8 @@
             padding: calc(25% + 50px) 0 0 50px; /* Align with "Steven Schepanski" */
         }
 
-        .say-hi button {
-            background-color: transparent;
-            border: 1px solid white;
-            color: white;
-            padding: 0 0 0 50px; /* Align with "Steven Schepanski" */
-            cursor: pointer;
-        }
-
         /* Impressum Section */
         .impressum {
-            position: fixed;
             bottom: 10px;
             right: 10px;
             font-size: 12px; /* Adjust font size as needed */
@@ -188,7 +181,7 @@
 
     <!-- Intro Section -->
     <div class="intro">
-        <h3>Intro</h3>
+        <h3 style="margin-bottom: 0;">Intro</h3>
         <p>
             Hi, I am Steven, born in Westphalia and<br>
             based in Berlin. When I am not analyzing<br>
@@ -216,9 +209,8 @@
     </div>
 
     <!-- Say Hi Section -->
-    <div class="say-hi">
-        <h3>Say hi.</h3>
-        <button onclick="window.location.href='mailto:your@email.com'">Send me an email</button>
+    <div>
+        <a href="mailto:your@email.com">Say hi.</a>
     </div>
 
     <!-- Impressum Section -->
