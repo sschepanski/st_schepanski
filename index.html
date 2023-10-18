@@ -76,8 +76,8 @@
         }
 
         .intro p {
-            max-width: 50%; /* Adjust max-width as needed */
-            margin-left: auto; /* Move to the right side */
+            max-width: 100%; /* Adjust max-width as needed */
+            margin-left: 0; /* Move to the right side */
         }
 
         /* Horizontal Moving Text */
@@ -137,15 +137,16 @@
             font-size: 24px;
         }
 
-        /* Email Section */
-        .say-hi {
+        /* Say Hi Section */
+        .say-hi-container {
             text-align: left;
             padding: calc(25% + 50px) 0 0 50px; /* Align with "Steven Schepanski" */
         }
 
-        .say-hi {
+        .say-hi-link {
             text-decoration: none; /* Remove underline */
             color: inherit; /* Use the default text color */
+            cursor: pointer;
         }
 
         /* Container for the main content */
@@ -220,8 +221,9 @@
     </div>
 
     <!-- Say Hi Section -->
-    <div>
-        <a href="mailto:your@email.com">Say hi.</a>
+    <div class="say-hi-container">
+        <h3>Say hi.</h3>
+        <a class="say-hi-link" href="mailto:your@email.com">Send me an email</a>
     </div>
 
     <!-- Container for the main content -->
