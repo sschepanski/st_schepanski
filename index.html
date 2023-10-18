@@ -3,11 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Data Scientist</title>
+    <title>Steven Schepanski</title>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: sandybrown;
+            color: white;
+            margin: 0;
+            font-family: Helvetica, sans-serif; /* Change font here */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: sandybrown;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Centered Text */
+        .center-text {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        /* Photos Section */
+        .photos {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Horizontal Moving Text */
+        .moving-text {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .moving-text p {
+            white-space: nowrap;
+            font-size: 24px;
+            animation: moveText 5s linear infinite;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Loading Bar */
+        .loading-bar {
+            width: 50%;
+            background-color: #ddd;
+        }
+
+        .loading-fill {
+            height: 10px;
+            background-color: green;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 20px 0;
+        }
+
+        /* Email Section */
+        .say-hi {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Impressum Section */
+        .impressum {
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Data Science Portfolio!</h1>
-    <p>This is a simple webpage to showcase my skills.</p>
+    <!-- Header Section -->
+    <header>
+        <h1>Steven</h1>
+        <div>
+            <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a> |
+            <a href="#email"><i class="fas fa-envelope"></i> Email</a> |
+            <a href="#github"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="#linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- Centered Text Section -->
+    <div class="center-text">
+        <h2>Data Scientist, Bioinformatics Expert & Psychologist aus Berlin.</h2>
+    </div>
+
+    <!-- Photos Section -->
+    <div class="photos">
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <img src="photo3.jpg" alt="Photo 3">
+    </div>
+
+    <!-- Intro Section -->
+    <div class="intro">
+        <h3>Intro</h3>
+        <p>Hi, I am Steven, born in Westphalia and based in Berlin. When I am not analyzing data full-time, you will find me doing sports or gaming.</p>
+    </div>
+
+    <!-- Horizontal Moving Text Section -->
+    <div class="moving-text">
+        <p>Data Scientist. Bioinformatics. Psychologist.</p>
+    </div>
+
+    <!-- Data Science Projects Section -->
+    <div class="projects">
+        <h3>Data Science Projects</h3>
+        <div class="loading-bar">
+            <div class="loading-fill"></div>
+        </div>
+        <ol>
+            <li><a href="#project1">Project 1</a> - Preview</li>
+            <li><a href="#project2">Project 2</a> - Preview</li>
+            <!-- Add more projects as needed -->
+        </ol>
+    </div>
+
+    <!-- Say Hi Section -->
+    <div class="say-hi">
+        <h3>Say hi.</h3>
+        <p><a href="mailto:your@email.com">Send me an email</a></p>
+    </div>
+
+    <!-- Impressum Section -->
+    <div class="impressum">
+        <h3>Impressum</h3>
+        <p>Angaben gemäß § 5 TMG:</p>
+
+        <p>Vor- und Nachname<br>
+        Straße<br>
+        PLZ Ort<br>
+
+        <p>Kontakt:</p>
+        <p>E-Mail: your@email.com</p>
+
+        <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</p>
+        <p>Vor- und Nachname<br>
+        Straße<br>
+        PLZ Ort</p>
+
+        </p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+    </div>
 </body>
 </html>
+
+
 
