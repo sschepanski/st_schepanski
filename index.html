@@ -84,6 +84,7 @@
         .moving-text-container {
             position: relative;
             overflow: hidden;
+            height: 300px; /* Set the desired height of the photo */
         }
 
         /* Background Image */
@@ -98,14 +99,23 @@
 
         .background-image img {
             width: 100%; /* Make the image take full width of the container */
-            height: auto; /* Maintain the aspect ratio */
+            height: 100%; /* Make the image take full heigth of the container */
+            object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
         }
 
         /* Moving Text */
         .moving-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .moving-text p {
             white-space: nowrap;
-            font-size: 24px;
-            animation: moveText 5s linear infinite;
+            font-size: 36px;
+            color: white; /* Set text color to white or adjust as needed */
+            z-index: 1; /* Place the text on top of the image */
         }
 
         @keyframes moveText {
@@ -217,7 +227,7 @@
         </p>
     </div>
 
-    <!-- Horizontal Moving Text Section -->
+    <!-- Moving Text Section with Integrated Image -->
     <div class="moving-text-container">
         <div class="background-image">
             <img src="Photos/Move_photo1.jpeg" alt="Background Photo">
