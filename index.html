@@ -30,12 +30,34 @@
 
         header h1 {
             margin: 0;
+            padding: 10px 20px; /* Adjust the top and left padding */
+        }
+
+        /* Add this to your existing styles */
+        header a {
+            color: white; /* Set the icon color to white */
+            text-decoration: none; /* Remove hyperlink underline */
+            margin-right: 10px; /* Add space between icons */
+        }
+
+        header a:hover {
+            opacity: 0.8; /* Optional: Reduce opacity on hover */
         }
 
         /* Centered Text */
         .center-text {
-            text-align: center;
-            padding: 50px 0;
+            text-align: left;
+            padding: 50px 0 0 calc(25% + 20px); /* Adjust padding as needed */
+        }
+
+        .custom-heading {
+            font-size: 2em; /* Double the font size */
+            margin: 0; /* Remove default margins */
+            line-height: 1.2; /* Adjust line height as needed */
+        }
+
+        .custom-heading span {
+            display: block; /* Each line on a new line */
         }
 
         /* Photos Section */
@@ -105,16 +127,20 @@
     <header>
         <h1>Steven</h1>
         <div>
-            <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a> |
-            <a href="#email"><i class="fas fa-envelope"></i> Email</a> |
-            <a href="#github"><i class="fab fa-github"></i> GitHub</a> |
-            <a href="#linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#portfolio"><i class="fas fa-briefcase"></i></a> |
+            <a href="#email"><i class="fas fa-envelope"></i></a> |
+            <a href="#github"><i class="fab fa-github"></i></a> |
+            <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
         </div>
     </header>
 
     <!-- Centered Text Section -->
     <div class="center-text">
-        <h2>Data Scientist, Bioinformatics Expert & Psychologist aus Berlin.</h2>
+        <h2 class="custom-heading">
+            <span>Data Scientist, Bioinformatics</span><br>
+            <span>Expert & Psychologist</span><br>
+            <span>from Berlin.</span>
+        </h2>
     </div>
 
     <!-- Photos Section -->
