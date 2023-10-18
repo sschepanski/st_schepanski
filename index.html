@@ -10,7 +10,7 @@
     
     <style>
         body {
-            background-color: sandybrown;
+            background-color: rgb(227, 83, 53);
             color: white;
             margin: 0;
             font-family: Helvetica, sans-serif; /* Change font here */
@@ -18,26 +18,25 @@
 
         /* Header Styles */
         header {
-            background-color: sandybrown;
+            background-color: rgb(227, 83, 53);
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding: 10px;
+            padding: 50px; /* Increased padding for more space */
         }
 
         header h1 {
-            margin: 0;
-            padding: 10px 20px; /* Adjust the top and left padding */
+            margin: 50px 0 0 50px; /* Top, right, bottom, left margin */
         }
 
         /* Add this to your existing styles */
         header a {
             color: white; /* Set the icon color to white */
             text-decoration: none; /* Remove hyperlink underline */
-            margin-right: 10px; /* Add space between icons */
+            margin-right: 50px; /* Add space between icons */
         }
 
         header a:hover {
@@ -47,7 +46,7 @@
         /* Centered Text */
         .center-text {
             text-align: left;
-            padding: 50px 0 0 calc(25% + 20px); /* Adjust padding as needed */
+            padding: 50px 0 0 calc(25% + 50px); /* Adjust padding as needed */
         }
 
         .custom-heading {
@@ -68,8 +67,13 @@
 
         /* Intro Section */
         .intro {
-            text-align: center;
-            padding: 20px 0;
+            text-align: left;
+            padding: 20px 0 0 calc(25% + 50px); /* Align with "Data Scientist" */
+        }
+
+        .intro p {
+            max-width: 50%; /* Adjust max-width as needed */
+            margin-left: auto; /* Move to the right side */
         }
 
         /* Horizontal Moving Text */
@@ -96,12 +100,12 @@
         /* Loading Bar */
         .loading-bar {
             width: 50%;
-            background-color: #ddd;
+            background-color: white;
         }
 
         .loading-fill {
             height: 10px;
-            background-color: green;
+            background-color: white;
         }
 
         /* Projects Section */
@@ -111,21 +115,34 @@
 
         /* Email Section */
         .say-hi {
-            text-align: center;
-            padding: 20px 0;
+            text-align: left;
+            padding: 20px 0 0 calc(25% + 50px); /* Align with "Data Scientist" */
+        }
+
+        .say-hi button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
         }
 
         /* Impressum Section */
         .impressum {
-            text-align: center;
-            padding: 20px 0;
+            text-align: right;
+            padding: 20px 50px;
+            display: none; /* Initially hide */
+        }
+
+        .show-impressum:checked + .impressum {
+            display: block; /* Show when checkbox is checked */
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Steven</h1>
+        <h1>Steven Schepanski</h1>
         <div>
             <a href="#portfolio"><i class="fas fa-briefcase"></i></a> |
             <a href="#email"><i class="fas fa-envelope"></i></a> |
@@ -177,10 +194,11 @@
     <!-- Say Hi Section -->
     <div class="say-hi">
         <h3>Say hi.</h3>
-        <p><a href="mailto:your@email.com">Send me an email</a></p>
+        <button onclick="window.location.href='mailto:your@email.com'">Send me an email</button>
     </div>
 
     <!-- Impressum Section -->
+    <input type="checkbox" id="show-impressum" class="show-impressum">
     <div class="impressum">
         <h3>Impressum</h3>
         <p>Angaben gemäß § 5 TMG:</p>
@@ -201,6 +219,3 @@
     </div>
 </body>
 </html>
-
-
-
