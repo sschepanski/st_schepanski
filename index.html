@@ -66,7 +66,17 @@
         /* Photos Section */
         .photos {
             text-align: center;
-            padding: 20px 0;
+        }
+
+        .photo-container {
+            display: inline-block;
+            margin: 10px;
+            max-width: 45%; /* Adjust the maximum width as needed */
+        }
+
+        .horizontal-photo {
+            max-width: 100%; /* Ensure the horizontal photo takes the full width */
+            clear: both; /* Start a new line after the horizontal photo */
         }
 
         /* Intro Section */
@@ -239,10 +249,17 @@
 
     <!-- Photos Section -->
     <div class="photos">
-        <img src="Photos/Paris_Eifeltower_2.png" alt="Photo 1">
-        <img src="Photos/Paris_Coffee.png" alt="Photo 2">
-        <img src="Photos/Boston_Profile.JPG" alt="Photo 3">
+        <div class="photo-container">
+            <img src="Photos/Paris_Eifeltower_2.png" alt="Photo 1">
+        </div>
+        <div class="photo-container">
+            <img src="Photos/Paris_Coffee.png" alt="Photo 2">
+        </div>
+        <div class="photo-container horizontal-photo">
+            <img src="Photos/Boston_Profile.JPG" alt="Photo 3">
+        </div>
     </div>
+    
 
     <!-- Intro Section -->
     <div class="intro">
@@ -268,7 +285,7 @@
     <!-- Projects Section -->
     <div class="projects-container">
         <!-- Data Science Projects -->
-        <div class="project-sheet" id="dataScienceProjects">
+        <div class="projects-sheet" id="dataScienceProjects">
             <h3>Data Science Projects</h3>
             <div class="loading-bar">
                 <p class="loading-text">65%</p>
@@ -277,6 +294,7 @@
             <ol class="projects-list">
                 <li><a href="#project1">Project 1</a> - Preview</li>
                 <li><a href="#project2">Project 2</a> - Preview</li>
+                <!-- Add more projects as needed -->
             </ol>
         </div>
 
@@ -295,14 +313,6 @@
     <div class="toggle-button" onclick="toggleProjects('dataScienceProjects')">Data Science Projects</div>
     <div class="toggle-button" onclick="toggleProjects('experimentalResearch')">Experimental Research</div>
 
-    <!-- Container for the main content -->
-    <div class="main-container">
-        <!-- Impressum Section -->
-        <div class="impressum">
-            <p>Impressum: Your Impressum content here.</p>
-        </div>
-    </div>
-
     <!-- JavaScript for toggling sheets -->
     <script>
         function toggleProjects(sheetId) {
@@ -317,6 +327,14 @@
             selectedSheet.classList.add('active');
         }
     </script>
+
+    <!-- Container for the main content -->
+    <div class="main-container">
+        <!-- Impressum Section -->
+        <div class="impressum">
+            <p>Impressum: Your Impressum content here.</p>
+        </div>
+    </div>
 
     <!-- Say Hi Section -->
     <div class="say-hi-container">
