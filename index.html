@@ -122,15 +122,6 @@
             }
         }
 
-        /* Data Science Projects Section */
-        .projects {
-            padding: calc(25% + 50px) 0 0 25px; /* Align with "Steven Schepanski" */
-        }
-
-        h3 {
-            font-size: 36px; /* Adjusted font size */
-        }
-
         .loading-bar {
             width: 50%; /* Adjust the width */
             background-color: white;
@@ -156,6 +147,47 @@
             transform: translate(-50%, -50%);
             color: white;
             font-size: 24px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .projects-sheet {
+            width: 48px; /* Adjust width as needed */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            display: none; /* Hide sheets by default */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .project-sheet.active {
+            display: block; /* Show active sheet */
+        }
+
+        .projects-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects-list li {
+            margin-bottom: 10px;
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            color: white;
+            background-color: rgb(227, 83, 53);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: inline-block;
         }
 
         /* Say Hi Section */
@@ -207,9 +239,9 @@
 
     <!-- Photos Section -->
     <div class="photos">
-        <img src="photo1.jpg" alt="Photo 1">
-        <img src="photo2.jpg" alt="Photo 2">
-        <img src="photo3.jpg" alt="Photo 3">
+        <img src="Photos/Paris_Eifeltower_2.png" alt="Photo 1">
+        <img src="Photos/Paris_Coffee.png" alt="Photo 2">
+        <img src="Photos/Boston_Profile.JPG" alt="Photo 3">
     </div>
 
     <!-- Intro Section -->
@@ -217,8 +249,9 @@
         <h3 style="margin-bottom: 0;">Intro</h3>
         <p style="margin-bottom: 0;"> <!-- Adjust the margin as needed -->
             Hi, I am Steven, born in Westphalia and<br>
-            based in Berlin. When I am not analyzing<br>
-            data full-time, you will find me doing sports or gaming.
+            based in Berlin. When I am not analyzing data full-time,<br>
+            you will find me doing sports, gaming or traveling<br>
+            through the world with a slight coffee addiction.
         </p>
     </div>
 
@@ -232,19 +265,58 @@
         </div>
     </div>
 
-    <!-- Data Science Projects Section -->
-    <div class="projects">
-        <h3>Data Science Projects</h3>
-        <div class="loading-bar">
-            <p class="loading-text">65%</p>
-            <div class="loading-fill"></div>
+    <!-- Projects Section -->
+    <div class="projects-container">
+        <!-- Data Science Projects -->
+        <div class="project-sheet" id="dataScienceProjects">
+            <h3>Data Science Projects</h3>
+            <div class="loading-bar">
+                <p class="loading-text">65%</p>
+                <div class="loading-fill"></div>
+            </div>
+            <ol class="projects-list">
+                <li><a href="#project1">Project 1</a> - Preview</li>
+                <li><a href="#project2">Project 2</a> - Preview</li>
+            </ol>
         </div>
-        <ol>
-            <li><a href="#project1">Project 1</a> - Preview</li>
-            <li><a href="#project2">Project 2</a> - Preview</li>
-            <!-- Add more projects as needed -->
-        </ol>
+
+        <!-- Experimental Research -->
+        <div class="projects-sheet" id="experimentalResearch">
+            <h3>Experimental Research</h3>
+            <ol class="projects-list">
+                <li><a href="#researchProject1">Research Project 1</a> - Preview</li>
+                <li><a href="#researchProject2">Research Project 2</a> - Preview</li>
+                <!-- Add more research projects as needed -->
+            </ol>
+        </div>
     </div>
+
+    <!-- Toggle Button -->
+    <div class="toggle-button" onclick="toggleProjects('dataScienceProjects')">Data Science Projects</div>
+    <div class="toggle-button" onclick="toggleProjects('experimentalResearch')">Experimental Research</div>
+
+    <!-- Container for the main content -->
+    <div class="main-container">
+        <!-- Impressum Section -->
+        <div class="impressum">
+            <p>Impressum: Your Impressum content here.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for toggling sheets -->
+    <script>
+        function toggleProjects(sheetId) {
+            // Hide all sheets
+            var sheets = document.querySelectorAll('.projects-sheet');
+            sheets.forEach(function(sheet) {
+                sheet.classList.remove('active');
+            });
+
+            // Show the selected sheet
+            var selectedSheet = document.getElementById(sheetId);
+            selectedSheet.classList.add('active');
+        }
+    </script>
 
     <!-- Say Hi Section -->
     <div class="say-hi-container">
