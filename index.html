@@ -65,17 +65,20 @@
 
         /* Photos Section */
         .photos {
-            text-align: center;
+            text-align: center;display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center the items horizontally */
         }
 
         .photo-container {
-            display: inline-block;
+            flex: 0 0 45%; /* Adjust the flex property as needed */
             margin: 10px;
-            max-width: 45%; /* Adjust the maximum width as needed */
+            max-width: 20%; /* Adjust the maximum width as needed */
+            max-height: 200px; /* Adjust the maximum height as needed */
         }
 
         .horizontal-photo {
-            max-width: 100%; /* Ensure the horizontal photo takes the full width */
+            max-width: 70%; /* Ensure the horizontal photo takes the full width */
             clear: both; /* Start a new line after the horizontal photo */
         }
 
@@ -83,11 +86,13 @@
         .intro {
             text-align: left;
             padding: 20px 0 0 calc(25% + 50px); /* Adjusted padding */
+            font-size: 1.5em;
         }
 
         .intro p {
             max-width: 100%; /* Adjust max-width as needed */
             margin-left: 0; /* Move to the right side */
+            font-size: 1.0em;
         }
 
         /* Horizontal Moving Container */
@@ -198,6 +203,7 @@
             border-radius: 5px;
             margin-bottom: 20px;
             display: inline-block;
+            font-size: 1.5em;
         }
 
         /* Say Hi Section */
@@ -327,14 +333,6 @@
             selectedSheet.classList.add('active');
         }
     </script>
-
-    <!-- Container for the main content -->
-    <div class="main-container">
-        <!-- Impressum Section -->
-        <div class="impressum">
-            <p>Impressum: Your Impressum content here.</p>
-        </div>
-    </div>
 
     <!-- Say Hi Section -->
     <div class="say-hi-container">
