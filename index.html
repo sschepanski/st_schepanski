@@ -89,7 +89,9 @@
 
         /* Horizontal Moving Container */
         .moving-text-container {
-            position: relative; /* Set the container to relative position */
+            position: relative;
+            overflow: hidden;
+            height: 300px; /* Set the desired height of the photo */
         }
 
         /* Background Image */
@@ -99,7 +101,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
         }
 
         .background-image img {
@@ -112,7 +113,7 @@
         .moving-text {
             position: absolute;
             top: 50%;
-            left: 50%; /* Center horizontally */
+            left: 0; /* Start from the left edge */
             white-space: nowrap;
             font-size: 50px;
             color: white; /* Set text color to white or adjust as needed */
@@ -201,7 +202,6 @@
         .say-hi-container {
             text-align: left;
             padding: calc(25% + 50px) 0 0 50px; /* Align with "Steven Schepanski" */
-            font-size: 1.5em;
         }
 
         .say-hi-link {
