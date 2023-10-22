@@ -47,7 +47,9 @@
 
         /* Centered Text */
         .center-text {
-            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 150px 0 0 calc(33.33% + 20px); /* Adjusted padding */
         }
 
@@ -56,7 +58,7 @@
             margin: 0; /* Remove default margins */
             line-height: 1; /* Adjust line height as needed */
             letter-spacing: 0; /* Set letter spacing to 0*/
-            justify-content: center;
+            text-align: center;
         }
 
         .custom-heading span {
@@ -81,9 +83,9 @@
         /* Intro Section */
         .intro {
             display: flex;
-            text-align: center;
+            justify-content: center;
             padding: 20px 0 0 calc(25% + 50px); /* Adjusted padding */
-            font-size: 1.5em;
+            font-size: 4.0em;
         }
 
         .intro p {
@@ -94,7 +96,7 @@
 
         .content {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
 
         /* Horizontal Moving Container */
