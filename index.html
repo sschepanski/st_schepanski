@@ -56,6 +56,7 @@
             margin: 0; /* Remove default margins */
             line-height: 1; /* Adjust line height as needed */
             letter-spacing: 0; /* Set letter spacing to 0*/
+            justify-content: center;
         }
 
         .custom-heading span {
@@ -79,7 +80,8 @@
 
         /* Intro Section */
         .intro {
-            text-align: left;
+            display: flex;
+            text-align: center;
             padding: 20px 0 0 calc(25% + 50px); /* Adjusted padding */
             font-size: 1.5em;
         }
@@ -88,6 +90,11 @@
             max-width: 100%; /* Adjust max-width as needed */
             margin-left: 0; /* Move to the right side */
             font-size: 1.0em;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
         }
 
         /* Horizontal Moving Container */
@@ -260,13 +267,15 @@
     
     <!-- Intro Section -->
     <div class="intro">
+        <div class="content">
         <h3 style="margin-bottom: 0;">Intro</h3>
-        <p style="margin-bottom: 0;"> <!-- Adjust the margin as needed -->
+            <p style="margin-bottom: 0;"> <!-- Adjust the margin as needed -->
             Hi, I am Steven, born in Westphalia and<br>
             based in Berlin. When I am not analysing data full-time,<br>
             you will find me doing sports, gaming or travelling<br>
             through the world with a slight coffee addiction.
-        </p>
+            </p>
+        </div>
     </div>
 
     <!-- Moving Text Section with Integrated Image -->
