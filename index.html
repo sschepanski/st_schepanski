@@ -148,24 +148,24 @@
 
         .projects-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
 
-        .projects-sheet {
-            width: 48px; /* Adjust width as needed */
-            background-color: rgb(159, 191, 159); /* Semi-transparent white background */
+        .projects-sheets {
+            background-color: rgb(159, 191, 159, 0.9); /* Semi-transparent white background */
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
             display: none; /* Hide sheets by default */
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            margin: auto;
+            bottom: 0;
+            text-align: center;
         }
 
-        .project-sheet.active {
-            display: block; /* Show active sheet */
+        .project-sheet h3 {
+            font-size: 24px;
         }
 
         .projects-list {
@@ -174,18 +174,12 @@
         }
 
         .projects-list li {
-            margin-bottom: 10px;
+            font-size: 16px;
+            margin-bottom: 10px 0;
         }
 
         .toggle-button {
             cursor: pointer;
-            color: rgb(159, 191, 159);
-            background-color: rgb(108, 84, 158);
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            display: inline-block;
-            font-size: 1.5em;
         }
 
         /* Say Hi Section */
@@ -268,9 +262,8 @@
         </div>
     </div>
 
-    <!-- Projects Section -->
     <div class="projects-container">
-            <!-- Toggle Button -->
+        <!-- Toggle Button -->
         <div class="toggle-button" onclick="toggleProjects('dataScienceProjects')">Data Science Projects</div>
         <div class="toggle-button" onclick="toggleProjects('experimentalResearch')">Experimental Research</div>
 
@@ -301,16 +294,9 @@
 
     <!-- JavaScript for toggling sheets -->
     <script>
-        function toggleProjects(sheetId) {
-            // Hide all sheets
-            var sheets = document.querySelectorAll('.projects-sheet');
-            sheets.forEach(function(sheet) {
-                sheet.classList.remove('active');
-            });
-
-            // Show the selected sheet
-            var selectedSheet = document.getElementById(sheetId);
-            selectedSheet.classList.add('active');
+        function toggleProjects(projectId) {
+            var projectSheet = document.getElementById(projectId);
+            projectSheet.style.display = projectSheet.style.display === "block" ? "none" : "block";
         }
     </script>
 
