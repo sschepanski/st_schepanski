@@ -65,13 +65,14 @@
 
         .photo-section {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             margin: 20px 0; /* Adjust the margin as needed */
         }
 
         .photo-section img {
-            width: 30%; /* Adjust the width of each photo */
-            height: auto; /* Maintain aspect ratio */
+            width: 300px; /* Adjust the width of each photo */
+            height: 400px; /* Maintain aspect ratio */
         }
 
         /* Intro Section */
@@ -248,9 +249,9 @@
 
     <!-- Photo Section -->
     <div class="photo-section">
-        <img src="Photos/photo1.jpg" alt="Photo 1">
-        <img src="Photos/photo2.jpg" alt="Photo 2">
-        <img src="Photos/photo3.jpg" alt="Photo 3">
+        <img src="Photos/Paris_Eifeltower.png" alt="Photo 1">
+        <img src="Photos/Paris_Coffee.png" alt="Photo 2">
+        <img src="Photos/Steven_Lab.png" alt="Photo 3" style="width: 600px; height: 200px;">
     </div>    
   
     <!-- Intro Section -->
@@ -283,10 +284,6 @@
         <!-- Data Science Projects -->
         <div class="projects-sheet" id="dataScienceProjects">
             <h3>Data Science Projects</h3>
-            <div class="loading-bar">
-                <p class="loading-text">65%</p>
-                <div class="loading-fill"></div>
-            </div>
             <ol class="projects-list">
                 <li><a href="#project1">Project 1</a> - Data Science Project Description 1</li>
                 <li><a href="#project2">Project 2</a> - Data Science Project Description 2</li>
@@ -308,7 +305,6 @@
             </ol>
         </div>
     </div>
-
 
     <!-- JavaScript for toggling sheets -->
     <script>
