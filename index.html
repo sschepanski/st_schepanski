@@ -49,7 +49,8 @@
         .center-text {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: left;
+            padding-top: 50px; /* Adjust the value according to your needs */
         }
 
         .custom-heading {
@@ -57,7 +58,7 @@
             margin: 0; /* Remove default margins */
             line-height: 1; /* Adjust line height as needed */
             letter-spacing: 0; /* Set letter spacing to 0*/
-            text-align: center;
+            text-align: left;
         }
 
         .custom-heading span {
@@ -128,10 +129,12 @@
         /* Moving Text */
         .moving-text {
             position: absolute;
-            top: 50%;
-            left: 0; /* Start from the left edge */
+            top: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             white-space: nowrap;
-            font-size: 50px;
+            font-size: 2.5em;
             color: rgb(159, 191, 159); /* Set text color to white or adjust as needed */
             animation: moveText 5s linear infinite;
         }
