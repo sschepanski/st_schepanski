@@ -1,316 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Steven Schepanski</title>
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        body {
-            background-color: rgb(108, 84, 158);
-            color: rgb(159, 191, 159);
-            margin: 0;
-            font-family: Helvetica, sans-serif; /* Change font here */
-        }
-
-        /* Header Styles */
-        header {
-            background-color: rgb(108, 84, 158);
-            position: fixed;
-            top: 0; /* Adjusted distance from the top */
-            left: 25px; /* Adjusted distance from the left */
-            width: calc(100% - 50px); /* Adjusted width */
-            display: flex;
-            justify-content: space-between;
-            align-items: center; /* Vertically align items */
-            padding: 25px; /* Adjusted padding for more space */
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        /* Add this to your existing styles */
-        header a {
-            color: rgb(159, 191, 159); /* Set the icon color to white */
-            text-decoration: none; /* Remove hyperlink underline */
-            margin-right: 25px; /* Add space between icons */
-            font-size: 1.5em; /* Increased icon size */
-        }
-
-        header a:hover {
-            opacity: 0.8; /* Optional: Reduce opacity on hover */
-        }
-
-        /* Centered Text */
-        .center-text {
-            display: flex;
-            justify-content: center;
-            align-items: left;
-            padding-top: 5%; /* Adjust the value according to your needs */
-        }
-
-        .custom-heading {
-            font-size: 72px; /* Increased font size */
-            margin-left: 23%; /* Remove default margins */
-            line-height: 1; /* Adjust line height as needed */
-            letter-spacing: 0; /* Set letter spacing to 0*/
-            text-align: left;
-        }
-
-        .custom-heading span {
-            display: block; /* Each line on a new line */
-            margin-bottom: 0em; /* Adjusted space between lines */
-        }
-
-        .photo-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin: 20px auto; /* Adjust the margin as needed */
-            width: 600px;
-            align-items: center;
-        }
-
-        .photo-section img {
-            width: 300px; /* Adjust the width of each photo */
-            height: 400px; /* Maintain aspect ratio */
-        }
-
-        /* Intro Section */
-        .intro {
-            display: flex;
-            justify-content: center;
-            padding: 20px 0 0 calc(25% + 50px); /* Adjusted padding */
-            font-size: 2.0em;
-        }
-
-        .intro h3 {
-            margin-bottom: 0;
-        }
-
-        .intro p {
-            max-width: 100%; /* Adjust max-width as needed */
-            margin-left: 0; /* Move to the right side */
-            font-size: 1.0em; /* Adjust the font size as needed */
-            margin-bottom: 0; /* Adjust the margin as needed */
-        }
-
-        .content {
-            display: flex;
-            flex-direction: row;
-        }
-
-        /* Horizontal Moving Container */
-        .moving-text-container {
-            position: relative;
-            overflow: hidden;
-            height: 300px; /* Set the desired height of the photo */
-        }
-
-        /* Background Image */
-        .background-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .background-image img {
-            width: 100%; /* Make the image take full width of the container */
-            height: 100%; /* Make the image take full heigth of the container */
-            object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
-        }
-
-        /* Moving Text */
-        .moving-text {
-            position: absolute;
-            top: 25%;
-            display: flex;
-            white-space: nowrap;
-            font-size: 50px;
-            color: rgb(159, 191, 159); /* Set text color to white or adjust as needed */
-            animation: moveText 5s linear infinite;
-        }
-
-        @keyframes moveText {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        .projects-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .projects-sheets {
-            background-color: rgb(159, 191, 159, 0.9); /* Semi-transparent white background */
-            padding: 20px;
-            display: none; /* Hide sheets by default */
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-align: center;
-        }
-
-        .project-sheet h3 {
-            font-size: 24px;
-        }
-
-        .projects-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .projects-list li {
-            font-size: 16px;
-            margin-bottom: 10px 0;
-        }
-
-        .toggle-button {
-            cursor: pointer;
-        }
-
-        /* Say Hi Section */
-        .say-hi-container {
-            text-align: left;
-            padding: calc(25% + 50px) 0 0 50px; /* Align with "Steven Schepanski" */
-            font-size: 1.5em;
-        }
-
-        .say-hi-link {
-            text-decoration: none; /* Remove underline */
-            color: inherit; /* Use the default text color */
-            cursor: pointer;
-        }
-
-        /* Container for the main content */
-        .main-container {
-            position: relative;
-        }
-
-        /* Impressum Section */
-        .impressum {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 1.5em; /* Adjust font size as needed */
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/webfonts/all.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <h1>Dr. Steven Schepanski</h1>
-        <div>
-            <a href="#portfolio">Portfolio</a>
-            <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/sschepanski"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/steven-schepanski"><i class="fab fa-linkedin"></i></a>
-        </div>
+      <h1>Dr. Steven Schepanski</h1>
+      <ul>
+        <li>
+          <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/sschepanski"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/steven-schepanski"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
     </header>
 
-    <!-- Centered Text Section -->
-    <div class="center-text">
-        <h2 class="custom-heading">
-            <span>Data Scientist, Bioinformatics and Cutie</span>
-            <span>Expert & Psychologist</span>
+    <main>
+      <section class="custom-intro content-format">
+        <span>
+          <h2>
+            Data <span>Scientist,</span>
+            Bioinformatics Expert
+          </h2>
+          <h3>
+            <strong> &amp; Psychologist</strong>
             <span>from Berlin.</span>
-        </h2>
-    </div>
-
-    <!-- Photo Section -->
-    <div class="photo-section">
-        <img src="Photos/Paris_Eifeltower.png" alt="Photo 1">
-        <img src="Photos/Paris_Coffee.png" alt="Photo 2">
-    </div>
-    <div class="photo-section">
-        <img src="Photos/Boston_Profile.JPG" alt="Photo 3" style="width: 600px; height: auto;">
-    </div>
-    
-    <!-- Intro Section -->
-    <div class="intro">
-        <div class="content">
-        <h3 style="margin-top: 3%; font-size: 2.0em;">Intro</h3>
-            <p style="margin-bottom: 0;"> <!-- Adjust the margin as needed -->
-            Hi, I am Steven, born in Westphalia and<br>
-            based in Berlin. When I am not analysing data full-time,<br>
-            you will find me doing sports, gaming or travelling<br>
-            through the world with a slight coffee addiction.
-            </p>
+          </h3>
+        </span>
+        <div class="swipe-container grid-on-desktop">
+          <img src="assets/photos/Paris_Eifeltower.png" alt="Photo 1" />
+          <img src="assets/photos/Paris_Coffee.png" alt="Photo 2" />
+          <img
+            class="full-width"
+            src="assets/photos/Boston_Profile.JPG"
+            alt="Photo 3"
+          />
         </div>
-    </div>
+      </section>
 
-    <!-- Moving Text Section with Integrated Image -->
-    <div class="moving-text-container">
-        <div class="background-image">
-            <img src="Photos/Move_photo1.jpeg" alt="Background Photo">
+      <!-- Intro Section -->
+      <section class="custom-description content-format">
+        <h3 class="subhead">Intro</h3>
+        <p>
+          Hi, I am Steven, born in Westphalia and based in Berlin. When I am not
+          analysing data full-time you will find me doing sports, gaming or
+          travelling through the world with a slight coffee addiction.
+        </p>
+      </section>
+
+      <section class="moving-text-container">
+        <img src="assets/photos/Move_photo1.jpeg" alt="Background Photo" />
+        <p class="moving-text">
+          Data&nbsp;Scientist.&nbsp;Bioinformatics.&nbsp;Psychologist.
+        </p>
+      </section>
+
+      <section class="project-overview">
+        <!--Input Tabs for projects-->
+        <input id="tab1" type="radio" name="tabs" checked />
+        <label for="tab1">Data Science Projects</label>
+        <input id="tab2" type="radio" name="tabs" />
+        <label for="tab2">Experimental Research</label>
+
+        <div class="projects-list" id="data-sciene-tab">
+          <ol>
+            <li class="card">
+              <a class="card-details" id="#project1">
+                <p class="text-title">Project 1</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+            <li class="card">
+              <a class="card-details" id="#project2">
+                <p class="text-title">Project 2</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+            <li class="card">
+              <a class="card-details" id="#project2">
+                <p class="text-title">Project 3</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+            <li class="card">
+              <a class="card-details" id="#project2">
+                <p class="text-title">Project 4</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+
+            <!-- Add more projects as needed -->
+          </ol>
         </div>
-        <div class="moving-text">
-            <p>Data Scientist. Bioinformatics. Psychologist.</p>
-        </div>
-    </div>
-
-    <div class="projects-container">
-        <!-- Toggle Button -->
-        <div class="toggle-button" onclick="toggleProjects('dataScienceProjects')">Data Science Projects</div>
-        <div class="toggle-button" onclick="toggleProjects('experimentalResearch')">Experimental Research</div>
-
-        <!-- Data Science Projects -->
-        <div class="projects-sheet" id="dataScienceProjects">
-            <h3>Data Science Projects</h3>
-            <ol class="projects-list">
-                <li><a href="#project1">Project 1</a> - Data Science Project Description 1</li>
-                <li><a href="#project2">Project 2</a> - Data Science Project Description 2</li>
-                <li><a href="#project3">Project 3</a> - Data Science Project Description 3</li>
-                <li><a href="#project4">Project 4</a> - Data Science Project Description 4</li>
-                <!-- Add more projects as needed -->
-            </ol>
-        </div>
-
         <!-- Experimental Research -->
-        <div class="projects-sheet" id="experimentalResearch">
-            <h3>Experimental Research</h3>
-            <ol class="projects-list">
-                <li><a href="#researchProject1">Research Project 1</a> - Research Project Description 1</li>
-                <li><a href="#researchProject2">Research Project 2</a> - Research Project Description 2</li>
-                <li><a href="#researchProject3">Research Project 3</a> - Research Project Description 3</li>
-                <li><a href="#researchProject4">Research Project 4</a> - Research Project Description 4</li>
-                <!-- Add more research projects as needed -->
-            </ol>
+        <div class="projects-list" id="experimental-research-tab">
+          <ol>
+            <li class="card">
+              <a class="card-details" id="#project1">
+                <p class="text-title">Project 5</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+            <li class="card">
+              <a class="card-details" id="#project2">
+                <p class="text-title">Project 6</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+            <li class="card">
+              <a class="card-details" id="#project2">
+                <p class="text-title">Project 7</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+            <li class="card">
+              <a class="card-details" id="#project2">
+                <p class="text-title">Project 8</p>
+                <p class="text-body">Here are the details of the project</p>
+              </a>
+              <button class="card-button">More Info</button>
+            </li>
+            <!-- Add more research projects as needed -->
+          </ol>
         </div>
-    </div>
+      </section>
+      <!-- Say Hi Section -->
 
-    <!-- JavaScript for toggling sheets -->
-    <script>
-        function toggleProjects(projectId) {
-            var projectSheet = document.getElementById(projectId);
-            projectSheet.style.display = projectSheet.style.display === "block" ? "none" : "block";
-        }
-    </script>
-
-    <!-- Say Hi Section -->
-    <div class="say-hi-container">
+      <div class="say-hi-container content-format">
         <a class="say-hi-link" href="mailto:your@email.com">Say hi.</a>
-    </div>
+      </div>
+    </main>
 
     <!-- Container for the main content -->
-    <div class="main-container">
-        <!-- Impressum Section -->
-        <div class="impressum">
-            <p>Impressum: Your Impressum content here.</p>
-        </div>
-    </div>
-</body>
+    <footer class="impressum">
+      <!-- Impressum Section -->
+      <p>Impressum: Your Impressum content here.</p>
+    </footer>
+
+    <!-- Centered Text Section -->
+  </body>
 </html>
