@@ -11,9 +11,14 @@
 
 /* Adapt variables here to update in project */
 :root {
-  /* Colors */
+  /* Colors for background and text*/
   --color-background: rgb(108, 84, 158);
   --color-text: rgb(159, 191, 159);
+
+  /* Colors for cards */
+  --color-card-background: #f5f5f5;
+  --color-card-text-title: darkslategray;
+  --color-card-text-description: rgb(134, 134, 134);
 
   /* Fonts */
   --font-family: Helvetica, sans-serif;
@@ -111,7 +116,6 @@ header a:hover {
   line-height: 1.2;
   letter-spacing: 0;
   text-align: left;
-  /* overflow-wrap: break-word; */
   word-break: break-word;
 }
 
@@ -171,13 +175,13 @@ header a:hover {
   margin-bottom: var(--spacing-xlarge);
 }
 
-.custom-description .subhead {
+.custom-description .intro-text {
   font-size: var(--font-size-xlarge);
   font-weight: bold;
 }
 
 /* Style that first letter! */
-.subhead::first-letter {
+.intro-text::first-letter {
   initial-letter: 2 1;
   font-weight: bold;
 }
@@ -188,7 +192,7 @@ header a:hover {
   bottom: 25%;
   white-space: nowrap;
   font-size: 50px;
-  color: rgb(159, 191, 159);
+  color: var(--color-text);
   animation: moveText 8s linear infinite;
 }
 
@@ -246,24 +250,25 @@ input:checked + label {
   opacity: 1;
 }
 
-#tab1:checked ~ #data-sciene-tab,
+#tab1:checked ~ #data-sciene-container,
 #tab2:checked ~ #experimental-research-tab {
   display: block;
 }
 
-ol {
+ul {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  gap: var(--spacing-medium);
+  gap: calc(var(--spacing-large) * 1.5);
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
+  width: clamp(220px, 100%, 360px);
   border-radius: var(--border-radius);
-  background: #f5f5f5;
+  background: var(--color-card-background);
   position: relative;
   padding: var(--spacing-medium);
   transition: 0.5s ease-out;
@@ -271,22 +276,26 @@ ol {
 }
 
 .card-details {
-  color: darkslategray;
+  color: var(--color-card-text-title);
   height: 100%;
-  gap: 0.5em;
+  gap: var(--spacing-small);
   display: grid;
   place-content: center;
 }
 
-.card-button {
-  transform: translate(-50%, 125%);
-  width: 60%;
-  border-radius: 1rem;
-  border: none;
+.button-layout {
+  text-align: center;
   background-color: var(--color-text);
-  color: #fff;
+  color: var(--color-background);
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.card-link {
+  transform: translate(-50%, 125%);
+  width: 60%;
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -295,7 +304,7 @@ ol {
 }
 
 .text-body {
-  color: rgb(134, 134, 134);
+  color: var(--color-card-text-description);
 }
 
 /*Text*/
@@ -310,7 +319,7 @@ ol {
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
-.card:hover .card-button {
+.card:hover .card-link {
   transform: translate(-50%, 50%);
   opacity: 1;
 }
@@ -328,12 +337,23 @@ ol {
   margin-top: var(--spacing-medium);
 }
 
+.say-hi-container {
+  margin-top: var(--spacing-large);
+}
+
 @keyframes moveText {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (hover: none) {
+  .card .card-link {
+    transform: translate(-50%, 50%);
+    opacity: 1;
   }
 }
 

@@ -3,7 +3,7 @@
     {
       "title": "Placeholder: Kaggle Competition - Capstone Project",
       "description": "This project explores the principles of physics.",
-      "link": "https://example.com/project1"
+      "link": "#"
     },
     {
       "title": "Placeholder: Health insurance",
@@ -50,8 +50,7 @@
     {
       "title": "Maternal Immune Support: Enhancing the Defenses of the Baby from Pregnancy Onward",
       "description": "Mothers pass immune cells to their babies during pregnancy, enhancing fetal immune development and providing protection against infections in early life. Higher numbers of these maternal immune cells correlate with increased resilience against infections, shedding light on a new dimension of maternal-fetal immune transfer that goes beyond antibodies, potentially influencing the newborn’s health and immunity.",
-      "link": "https://doi.org/10.1038/s41467-021-24719-z",
-      "link": "https://doi.org/10.15252/embr.202356829"
+      "link": "https://doi.org/10.1038/s41467-021-24719-z"
     },
     {
       "title": "Nurturing Minds: How Mom’s Cells Guide Healthy Brain Development",
@@ -61,8 +60,7 @@
     {
       "title": "Motherhood in a Time of Pandemic: Insights into Maternal Well-being and Infant Development",
       "description": "Investigating the impact of COVID-19 pandemic on early motherhood, we found comparable mental health outcomes but noted higher dissatisfaction with the maternal role during the pandemic. Focusing on infants at 7 months after birth, we found increased mantel depressive symptoms associated with infants experiencing more sleeping and crying issues, indicating potential long-term effects.",
-      "link": "https://doi.org/10.1080/02646838.2021.2013458",
-      "link": "https://doi.org/10.3389/fpsyg.2021.805543"
+      "link": "https://doi.org/10.1080/02646838.2021.2013458"
     }
   ]
 }

@@ -7,6 +7,8 @@
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="./assets/webfonts/all.min.css" />
+
+    <!-- Regular styles -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -30,6 +32,7 @@
       </ul>
     </header>
 
+    <!-- Main Content -->
     <main>
       <section class="custom-intro content-format">
         <span>
@@ -42,20 +45,31 @@
             <span>from Berlin.</span>
           </h3>
         </span>
+
+        <!--This div holds your photos. They turn into a swipable containter on mobile
+        If you want to have the swipe container on desktop as well, remove the grid-on-desktop prop
+        If you want to add more photos, just add more img tags
+        -->
         <div class="swipe-container grid-on-desktop">
-          <img src="assets/photos/Paris_Eifeltower.png" alt="Photo 1" />
-          <img src="assets/photos/Paris_Coffee.png" alt="Photo 2" />
+          <img
+            src="assets/photos/Paris_Eifeltower.png"
+            alt="steven Schepanski in Paris"
+          />
+          <img
+            src="assets/photos/Paris_Coffee.png"
+            alt="Steven Schepanski in Paris with coffee"
+          />
           <img
             class="full-width"
             src="assets/photos/Boston_Profile.JPG"
-            alt="Photo 3"
+            alt="Steven Schepanski in Boston"
           />
         </div>
       </section>
 
-      <!-- Intro Section -->
+      <!-- Description Text -->
       <section class="custom-description content-format">
-        <h3 class="subhead">Intro</h3>
+        <h3 class="intro-text">Intro</h3>
         <p>
           Hi, I am Steven, born in Westphalia and based in Berlin. When I am not
           analysing data full-time you will find me doing sports, gaming or
@@ -63,6 +77,7 @@
         </p>
       </section>
 
+      <!-- Moving Text Section -->
       <section class="moving-text-container">
         <img src="assets/photos/Move_photo1.jpeg" alt="Background Photo" />
         <p class="moving-text">
@@ -70,95 +85,40 @@
         </p>
       </section>
 
+      <!-- Project Overview Section -->
       <section class="project-overview">
-        <!--Input Tabs for projects-->
+        <!--Input Tabs for projects
+          If you want to change the default tab, change the checked property
+          to the id of the tab you want to be default -->
         <input id="tab1" type="radio" name="tabs" checked />
         <label for="tab1">Data Science Projects</label>
         <input id="tab2" type="radio" name="tabs" />
         <label for="tab2">Experimental Research</label>
 
-        <div class="projects-list" id="data-sciene-tab">
-          <ol>
-            <li class="card">
-              <a class="card-details" id="#project1">
-                <p class="text-title">Project 1</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-            <li class="card">
-              <a class="card-details" id="#project2">
-                <p class="text-title">Project 2</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-            <li class="card">
-              <a class="card-details" id="#project2">
-                <p class="text-title">Project 3</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-            <li class="card">
-              <a class="card-details" id="#project2">
-                <p class="text-title">Project 4</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-
-            <!-- Add more projects as needed -->
-          </ol>
+        <div class="projects-list" id="data-sciene-container">
+          <!-- This is an empty container for the data-science-projects
+            Your projects will be added here by the script create-projects.js
+            If you want to add more projects, create a new entry in the projects.json file -->
+          <ul></ul>
         </div>
+
         <!-- Experimental Research -->
         <div class="projects-list" id="experimental-research-tab">
-          <ol>
-            <li class="card">
-              <a class="card-details" id="#project1">
-                <p class="text-title">Project 5</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-            <li class="card">
-              <a class="card-details" id="#project2">
-                <p class="text-title">Project 6</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-            <li class="card">
-              <a class="card-details" id="#project2">
-                <p class="text-title">Project 7</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-            <li class="card">
-              <a class="card-details" id="#project2">
-                <p class="text-title">Project 8</p>
-                <p class="text-body">Here are the details of the project</p>
-              </a>
-              <button class="card-button">More Info</button>
-            </li>
-            <!-- Add more research projects as needed -->
-          </ol>
+          <!-- See comment for data science projects -->
+          <ul></ul>
         </div>
       </section>
-      <!-- Say Hi Section -->
 
-      <div class="say-hi-container content-format">
-        <a class="say-hi-link" href="mailto:your@email.com">Say hi.</a>
-      </div>
+      <!-- Say Hi Section -->
+      <a class="button-layout say-hi-container" href="mailto:your@email.com"
+        >Say hi.</a
+      >
     </main>
 
-    <!-- Container for the main content -->
+    <!-- Container for the impressum -->
     <footer class="impressum">
-      <!-- Impressum Section -->
       <p>Impressum: Your Impressum content here.</p>
     </footer>
-
-    <!-- Centered Text Section -->
   </body>
+  <script type="module" src="/scripts/create-projects.js"></script>
 </html>
