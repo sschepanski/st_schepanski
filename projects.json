@@ -1,0 +1,36 @@
+{
+  "data-science-projects": [
+    {
+      "title": "Project 1",
+      "description": "This project explores the principles of physics.",
+      "link": "https://example.com/project1"
+    },
+    {
+      "title": "Project 2",
+      "description": "A chemistry experiment to investigate chemical reactions.",
+      "link": "https://example.com/project2"
+    },
+    {
+      "title": "Project 3",
+      "description": "An astronomy project to study the stars and galaxies.",
+      "link": "https://example.com/project3"
+    }
+  ],
+  "experimental-research-projects": [
+    {
+      "title": "Project 1",
+      "description": "This project explores the principles of physics.",
+      "link": "https://example.com/project1"
+    },
+    {
+      "title": "Project 2",
+      "description": "A chemistry experiment to investigate chemical reactions.",
+      "link": "https://example.com/project2"
+    },
+    {
+      "title": "Project 3",
+      "description": "An astronomy project to study the stars and galaxies.",
+      "link": "https://example.com/project3"
+    }
+  ]
+}
