@@ -26,9 +26,7 @@ his projects, and ways to get in touch.
 
 ## Preview
 
-![Website Preview](url-to-preview-image)
-
-[Live Demo](link-to-live-demo)
+![Website Preview](assets/photos/Webpage%20preview.png)
 
 ## Setup
 
