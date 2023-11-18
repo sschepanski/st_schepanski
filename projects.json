@@ -1,8 +1,8 @@
 {
   "data-science-projects": [
     {
-      "title": "Placeholder: Kaggle Competition - Capstone Project",
-      "description": "This project explores the principles of physics.",
+      "title": "Sleep State Prediction",
+      "description": "Kaggle Competition: This project focuses on developing a model for sleep event detection using wrist-worn accelerometer data. The goal is to accurately identify sleep onset and wake periods.",
       "link": "#"
     },
     {
@@ -21,23 +21,23 @@
       "link": "https://example.com/project3"
     },
     {
-      "title": "Placeholder: Time Series Analysis",
-      "description": "An astronomy project to study the stars and galaxies.",
+      "title": "Sales Prediction",
+      "description": "This project seeks to predict and visually represent the upcoming 6 months of total sales by leveraging historical trends, while also allowing for adjustments that take into account both past sales patterns and external environmental factors.",
       "link": "https://example.com/project3"
     },
     {
-      "title": "Placeholder: Kickstarter Challenge",
-      "description": "An astronomy project to study the stars and galaxies.",
+      "title": "Kickstarter",
+      "description": "This project focuses on developing predictive models for Kickstarter campaigns, aiming to forecast project success or failure based on various factors. The dataset spans a diverse range of Kickstarter projects, providing valuable insights for creators and backers.",
       "link": "https://example.com/project3"
     },
     {
-      "title": "Placeholder: Diabetes Challenge",
-      "description": "An astronomy project to study the stars and galaxies.",
+      "title": "Diabetes Onset",
+      "description": "This project aims to develop a machine learning model to predict the likelihood of diabetes onset in patients using a Diabetes Database. The dataset comprises various medical predictor variables.",
       "link": "https://example.com/project3"
     },
     {
-      "title": "Placeholder: YouTube EDA Challenge",
-      "description": "An astronomy project to study the stars and galaxies.",
+      "title": "YouTube EDA",
+      "description": "This project aims to provide the music agency with valuable insights into the factors influencing the likelihood of their music videos becoming trending on YouTube.",
       "link": "https://example.com/project3"
     }
   ],
