@@ -8,37 +8,37 @@
     {
       "title": "Health Insurance Costs",
       "description": "The ultimate goal is to develop predictive models that can estimate medical insurance costs based on these factors. The project explores the relationship between personal attributes, geographic factors, and their impact on medical insurance charges.",
-      "link": "https://example.com/project2"
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Health_Insurance"
     },
     {
       "title": "Placeholder: Stroke prediction",
       "description": "An astronomy project to study the stars and galaxies.",
-      "link": "https://example.com/project3"
+      "link": "#"
     },
     {
       "title": "Placeholder: StockX Sneaker Data Contest",
       "description": "An astronomy project to study the stars and galaxies.",
-      "link": "https://example.com/project3"
+      "link": "#"
     },
     {
       "title": "Sales Prediction",
       "description": "This project seeks to predict and visually represent the upcoming 6 months of total sales by leveraging historical trends, while also allowing for adjustments that take into account both past sales patterns and external environmental factors.",
-      "link": "https://example.com/project3"
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Time_Series_Analysis"
     },
     {
       "title": "Kickstarter",
       "description": "This project focuses on developing predictive models for Kickstarter campaigns, aiming to forecast project success or failure based on various factors. The dataset spans a diverse range of Kickstarter projects, providing valuable insights for creators and backers.",
-      "link": "https://example.com/project3"
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Kickstarter_Prediction"
     },
     {
       "title": "Diabetes Onset",
       "description": "This project aims to develop a machine learning model to predict the likelihood of diabetes onset in patients using a Diabetes Database. The dataset comprises various medical predictor variables.",
-      "link": "https://example.com/project3"
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Diabetes_Prediction"
     },
     {
       "title": "YouTube EDA",
       "description": "This project aims to provide the music agency with valuable insights into the factors influencing the likelihood of their music videos becoming trending on YouTube.",
-      "link": "https://example.com/project3"
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/YouTube_EDA_challenge"
     }
   ],
   "experimental-research-projects": [
