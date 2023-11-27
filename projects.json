@@ -53,14 +53,29 @@
       "link": "https://doi.org/10.1038/s41467-021-24719-z"
     },
     {
+      "title": "How the First COVID-19 Wave Influenced Early Motherhood in Northern Germany",
+      "description": "Despite no significant changes in depression and anxiety, mothers in Northern Germany expressed higher dissatisfaction with the maternal role during the first COVID-19 wave. This study highlights potential influences of pandemic conditions on everyday life.",
+      "link": "https://doi.org/10.1080/02646838.2021.2013458"
+    },
+    {
+      "title": "Impact of COVID-19 Conditions on Infants and Maternal Mental Health",
+      "description": "Mothers in Northern Germany reported more sleeping and crying problems in infants born during the COVID-19 pandemic. The findings suggest a lasting impact on infant and maternal well-being, emphasizing the need for targeted peripartum and pediatric care.",
+      "link": "https://doi.org/10.3389/fpsyg.2021.805543"
+    },
+    {
       "title": "Nurturing Minds: How Mom’s Cells Guide Healthy Brain Development",
       "description": "Maternal cells transferred during pregnancy play a vital role in shaping the developing brain. These cells unique markers, regulate microglia (brain immune cells), and contribute to the maturation of neural circuits, ultimately influencing lifelong brain functions and behaviour. This reveals that the transfer of these cells is not just a byproduct of pregnancy but are active participants in creating a foundation for optimal brain health.",
       "link": "https://doi.org/10.1038/s41467-022-32230-2"
     },
     {
-      "title": "Motherhood in a Time of Pandemic: Insights into Maternal Well-being and Infant Development",
-      "description": "Investigating the impact of COVID-19 pandemic on early motherhood, we found comparable mental health outcomes but noted higher dissatisfaction with the maternal role during the pandemic. Focusing on infants at 7 months after birth, we found increased mantel depressive symptoms associated with infants experiencing more sleeping and crying issues, indicating potential long-term effects.",
-      "link": "https://doi.org/10.1080/02646838.2021.2013458"
+      "title": "Maternal Transfer of Pathogen-Specific T Cells Boosts Neonatal Immunity in Mice",
+      "description": "This study reveals the transfer of pathogen-specific T cells from mother to fetus in mice during pregnancy, showcasing the potential of maternal microchimeric cells to enhance neonatal immunity. The findings emphasize the broader scope of maternally-derived passive immunity beyond antibodies.",
+      "link": "https://doi.org/10.15252/embr.202356829"
+    },
+    {
+      "title": "Predicting Early Respiratory Infections and Childhood Asthma via Fetal Lung Growth",
+      "description": "This study demonstrates that enhanced fetal lung growth, monitored through ultrasound during pregnancy, is associated with a lower risk of early-life respiratory infections and asthma at five years. Accurate machine-learning models based on fetal lung growth effectively predict these risks, emphasizing the value of sonographic monitoring for anticipating childhood respiratory health issues.",
+      "link": ""
     }
   ]
 }
