@@ -3,7 +3,7 @@
     {
       "title": "Sleep State Prediction",
       "description": "Kaggle Competition: This project focuses on developing a model for sleep event detection using wrist-worn accelerometer data. The goal is to accurately identify sleep onset and wake periods.",
-      "link": "#"
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Sleep_States"
     },
     {
       "title": "Health Insurance Costs",
@@ -11,14 +11,14 @@
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Health_Insurance"
     },
     {
-      "title": "Placeholder: Stroke prediction",
-      "description": "An astronomy project to study the stars and galaxies.",
-      "link": "#"
+      "title": "Stroke Prediction",
+      "description": "This project focuses on developing a machine learning model for predicting the likelihood of stroke events based on 11 clinical features. The dataset used for this analysis is the Stroke Prediction Dataset, which includes essential information to predict whether a patient is likely to experience a stroke.",
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Stroke_Prediction"
     },
     {
-      "title": "Placeholder: StockX Sneaker Data Contest",
-      "description": "An astronomy project to study the stars and galaxies.",
-      "link": "#"
+      "title": "Heart Attack Analysis & Prediction",
+      "description": "This project is centered around the development of a machine learning model for predicting the likelihood of a heart attack based on various medical parameters.",
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Heart_attack_prediction"
     },
     {
       "title": "Sales Prediction",
