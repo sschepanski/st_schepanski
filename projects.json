@@ -43,33 +43,38 @@
   ],
   "experimental-research-projects": [
     {
+      "title": "Prenatal Modulators and Cognitive Outcomes: A Literature Review",
+      "description": "We systemically examine observational studies, synthesising evidence on how maternal distress and infections impact immune-endocrine adaptations during pregnancy. We delve into the intricacies of brain development in mice and humans, introducing innovative perspectives on the correlation between altered adaptations and cognitive outcomes in offspring. This review offers a comprehensive exploration of the literature, shedding light on the intricate dynamics of prenatal influences on cognitive development.",
+      "link": "https://doi.org/10.3389/fimmu.2018.02186"
+    },
+    {
       "title": "Maternal Immune Support: Enhancing the Defenses of the Baby after Pregnancy",
-      "description": "Mothers pass immune cells to their babies during pregnancy, enhancing fetal immune development and providing protection against infections in early life. Higher numbers of these maternal immune cells correlate with increased resilience against infections, shedding light on a new dimension of maternal-fetal immune transfer that goes beyond antibodies, potentially influencing the newborn’s health and immunity.",
+      "description": "We applied MeDIP-Seq to profile the epigenetics of hematopoietic stem cells (HSC) in offspring exposed to varying levels of maternal immune support. We identified Differentially Methylated Regions (DMRs) and conducted gene ontology analyses using diffreps. For microbiome analysis, we employed degenerate primers and used QIIME for OTU clustering and diversity analysis. Statistical assessments, such as Mann–Whitney-U tests and Spearman correlations, were utilised for robust data interpretation.",
       "link": "https://doi.org/10.1038/s41467-021-24719-z"
     },
     {
       "title": "How the First COVID-19 Wave Influenced Early Motherhood in Northern Germany",
-      "description": "Despite no significant changes in depression and anxiety, mothers in Northern Germany expressed higher dissatisfaction with the maternal role during the first COVID-19 wave. This study highlights potential influences of pandemic conditions on everyday life.",
+      "description": "We employed a single-centre cross-sectional design to assess the influence of the initial COVID-19 wave on maternal mental health. Various statistical methods, including one-way ANOVA, non-parametric tests, and multiple regression, were applied for comprehensive data analysis. The study focused on thorough statistical computations, ensuring a rigorous evaluation of psychological and sociodemographic variables.",
       "link": "https://doi.org/10.1080/02646838.2021.2013458"
     },
     {
       "title": "Impact of COVID-19 Conditions on Infants and Maternal Mental Health",
-      "description": "Mothers in Northern Germany reported more sleeping and crying problems in infants born during the COVID-19 pandemic. The findings suggest a lasting impact on infant and maternal well-being, emphasizing the need for targeted peripartum and pediatric care.",
+      "description": "Our statistical analysis incorporated descriptive statistics, univariate ANOVA, Mann–Whitney-U-Test, χ2-Test, and regression-based moderation analyses. To address missing data, we used Expectation Maximization estimation. Robust statistical assessments provided a detailed exploration of the impact of COVID-19 conditions on both infants and maternal mental health.",
       "link": "https://doi.org/10.3389/fpsyg.2021.805543"
     },
     {
       "title": "Nurturing Minds: How Mom’s Cells Guide Healthy Brain Development",
-      "description": "Maternal cells transferred during pregnancy play a vital role in shaping the developing brain. These cells unique markers, regulate microglia (brain immune cells), and contribute to the maturation of neural circuits, ultimately influencing lifelong brain functions and behaviour. This reveals that the transfer of these cells is not just a byproduct of pregnancy but are active participants in creating a foundation for optimal brain health.",
+      "description": "Our project harnessed scRNA-sequencing data to explore the role of maternal cells in guiding healthy brain development. Seurat facilitated clustering analysis, and differential gene expression analysis was carried out with MAST. RNA sequencing and subsequent bioinformatic analyses, including Welch’s method and bootstrapping, provided insights into the molecular mechanisms. Integrating both scRNA-seq and RNA-seq data enabled a comprehensive understanding of gene expression dynamics.",
       "link": "https://doi.org/10.1038/s41467-022-32230-2"
     },
     {
       "title": "Maternal Transfer of Pathogen-Specific T Cells Boosts Neonatal Immunity in Mice",
-      "description": "This study reveals the transfer of pathogen-specific T cells from mother to fetus in mice during pregnancy, showcasing the potential of maternal microchimeric cells to enhance neonatal immunity. The findings emphasize the broader scope of maternally-derived passive immunity beyond antibodies.",
+      "description": "Statistical analyses, including unpaired Students' t-Test, Mann–Whitney-U test, Ordinary one-way ANOVA, and Kruskal–Wallis test, were employed to evaluate the impact of maternal transfer of pathogen-specific T cells on neonatal immunity. Robust regression and outlier removal techniques ensured the reliability of our results.",
       "link": "https://doi.org/10.15252/embr.202356829"
     },
     {
       "title": "Predicting Early Respiratory Infections and Childhood Asthma via Fetal Lung Growth",
-      "description": "This study demonstrates that enhanced fetal lung growth, monitored through ultrasound during pregnancy, is associated with a lower risk of early-life respiratory infections and asthma at five years. Accurate machine-learning models based on fetal lung growth effectively predict these risks, emphasizing the value of sonographic monitoring for anticipating childhood respiratory health issues.",
+      "description": "In our data science-driven approach, we predicted respiratory infections and childhood asthma risk. We utilised statistical analyses such as Chi-squared and Mann–Whitney U tests, Poisson regression, and machine learning algorithms like K-Nearest Neighbors, Random Forest, and eXtreme Gradient Boosting. Feature importance was assessed using SHapley Additive exPlanations (SHAP) values, ensuring a robust predictive model.",
       "link": ""
     }
   ]
