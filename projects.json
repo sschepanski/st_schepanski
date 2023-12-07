@@ -2,12 +2,12 @@
   "data-science-projects": [
     {
       "title": "Sleep State Prediction",
-      "description": "Kaggle Competition: This project focuses on developing a model for sleep event detection using wrist-worn accelerometer data. The goal is to accurately identify sleep onset and wake periods.",
+      "description": "Conducted exploratory analysis, focusing on minute-based event labelling, identification of missing labels, and detection of duplicate data within series. Utilised logistic regression and random forest models for time series classification. Additionally, experimented with CNN/ResNet models for classification, evaluating their effectiveness in the given context.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Sleep_States"
     },
     {
       "title": "Health Insurance Costs",
-      "description": "The ultimate goal is to develop predictive models that can estimate medical insurance costs based on these factors. The project explores the relationship between personal attributes, geographic factors, and their impact on medical insurance charges.",
+      "description": "Employed different regression models (Linear, Ridge, Lasso, Decision Tree, Random Forest, XGBoost, LightGBM, SVM) to predict the financial burden of insurance and identify important features responsible for these high costs. Explored the relationship between personal attributes, geographic factors, and their impact on medical insurance charges.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Health_Insurance"
     },
     {
@@ -17,38 +17,38 @@
     },
     {
       "title": "Heart Attack Analysis & Prediction",
-      "description": "This project is centered around the development of a machine learning model for predicting the likelihood of a heart attack based on various medical parameters.",
+      "description": "Used various models (KNN, Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost) to predict the most important feature that predicts heart attacks. Assessed accuracy, precision, recall, and F1-Score for each model.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Heart_attack_prediction"
     },
     {
       "title": "Sales Prediction",
-      "description": "This project seeks to predict and visually represent the upcoming 6 months of total sales by leveraging historical trends, while also allowing for adjustments that take into account both past sales patterns and external environmental factors.",
+      "description": "Utilised time series analysis techniques, investigating seasonality and stationarity with aroma, Holt-Winters forecasting, auto ARIMA, and SARIMAX. Explored historical trends, allowing adjustments for past sales patterns and external environmental factors when predicting the next 6 months of total sales.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Time_Series_Analysis"
     },
     {
       "title": "Kickstarter",
-      "description": "This project focuses on developing predictive models for Kickstarter campaigns, aiming to forecast project success or failure based on various factors. The dataset spans a diverse range of Kickstarter projects, providing valuable insights for creators and backers.",
+      "description": "Utilised Random Forest and XGBoost for predicting the number of backers needed for being successful in a Kickstarter campaign. The project progressed from extensive exploratory data analysis to predicting and hyperparameter tuning.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Kickstarter_Prediction"
     },
     {
       "title": "Diabetes Onset",
-      "description": "This project aims to develop a machine learning model to predict the likelihood of diabetes onset in patients using a Diabetes Database. The dataset comprises various medical predictor variables.",
+      "description": "Utilised logistic regression and decision tree to predict the onset of diabetes in a dataset, including hyperparameter tuning. Evaluated model performance through accuracy, precision, recall, and F1-Score.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Diabetes_Prediction"
     },
     {
       "title": "YouTube EDA",
-      "description": "This project aims to provide the music agency with valuable insights into the factors influencing the likelihood of their music videos becoming trending on YouTube.",
+      "description": "Aims to provide the music agency with valuable insights into the factors influencing the likelihood of their music videos becoming trending on YouTube. Employed exploratory data analysis techniques for a comprehensive understanding.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/YouTube_EDA_challenge"
     }
   ],
   "experimental-research-projects": [
     {
       "title": "Prenatal Modulators and Cognitive Outcomes: A Literature Review",
-      "description": "We systemically examine observational studies, synthesising evidence on how maternal distress and infections impact immune-endocrine adaptations during pregnancy. We delve into the intricacies of brain development in mice and humans, introducing innovative perspectives on the correlation between altered adaptations and cognitive outcomes in offspring. This review offers a comprehensive exploration of the literature, shedding light on the intricate dynamics of prenatal influences on cognitive development.",
+      "description": "We systematically examine observational studies, synthesising evidence on how maternal distress and infections impact immune-endocrine adaptations during pregnancy. We delve into the intricacies of brain development in mice and humans, introducing innovative perspectives on the correlation between altered adaptations and cognitive outcomes in offspring. This review offers a comprehensive exploration of the literature, shedding light on the intricate dynamics of prenatal influences on cognitive development.",
       "link": "https://doi.org/10.3389/fimmu.2018.02186"
     },
     {
-      "title": "Maternal Immune Support: Enhancing the Defenses of the Baby after Pregnancy",
+      "title": "Maternal Immune Support: Enhancing the Defences of the Baby after Pregnancy",
       "description": "We applied MeDIP-Seq to profile the epigenetics of hematopoietic stem cells (HSC) in offspring exposed to varying levels of maternal immune support. We identified Differentially Methylated Regions (DMRs) and conducted gene ontology analyses using diffreps. For microbiome analysis, we employed degenerate primers and used QIIME for OTU clustering and diversity analysis. Statistical assessments, such as Mann–Whitney-U tests and Spearman correlations, were utilised for robust data interpretation.",
       "link": "https://doi.org/10.1038/s41467-021-24719-z"
     },
@@ -63,7 +63,7 @@
       "link": "https://doi.org/10.3389/fpsyg.2021.805543"
     },
     {
-      "title": "Nurturing Minds: How Mom’s Cells Guide Healthy Brain Development",
+      "title": "Nurturing Minds: How Mum’s Cells Guide Healthy Brain Development",
       "description": "Our project harnessed scRNA-sequencing data to explore the role of maternal cells in guiding healthy brain development. Seurat facilitated clustering analysis, and differential gene expression analysis was carried out with MAST. RNA sequencing and subsequent bioinformatic analyses, including Welch’s method and bootstrapping, provided insights into the molecular mechanisms. Integrating both scRNA-seq and RNA-seq data enabled a comprehensive understanding of gene expression dynamics.",
       "link": "https://doi.org/10.1038/s41467-022-32230-2"
     },
@@ -74,7 +74,7 @@
     },
     {
       "title": "Predicting Early Respiratory Infections and Childhood Asthma via Fetal Lung Growth",
-      "description": "In our data science-driven approach, we predicted respiratory infections and childhood asthma risk. We utilised statistical analyses such as Chi-squared and Mann–Whitney U tests, Poisson regression, and machine learning algorithms like K-Nearest Neighbors, Random Forest, and eXtreme Gradient Boosting. Feature importance was assessed using SHapley Additive exPlanations (SHAP) values, ensuring a robust predictive model.",
+      "description": "In our data science-driven approach, we predicted respiratory infections and childhood asthma risk. We utilised statistical analyses such as Chi-squared and Mann–Whitney U tests, Poisson regression, and machine learning algorithms like K-Nearest Neighbours, Random Forest, and eXtreme Gradient Boosting. Feature importance was assessed using SHapley Additive exPlanations (SHAP) values, ensuring a robust predictive model.",
       "link": ""
     }
   ]
