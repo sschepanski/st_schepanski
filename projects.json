@@ -43,14 +43,24 @@
   ],
   "experimental-research-projects": [
     {
-      "title": "Prenatal Modulators and Cognitive Outcomes: A Literature Review",
-      "description": "We systematically examine observational studies, synthesising evidence on how maternal distress and infections impact immune-endocrine adaptations during pregnancy. We delve into the intricacies of brain development in mice and humans, introducing innovative perspectives on the correlation between altered adaptations and cognitive outcomes in offspring. This review offers a comprehensive exploration of the literature, shedding light on the intricate dynamics of prenatal influences on cognitive development.",
-      "link": "https://doi.org/10.3389/fimmu.2018.02186"
+      "title": "Predicting Early Respiratory Infections and Childhood Asthma via Fetal Lung Growth",
+      "description": "In our data science-driven approach, we predicted respiratory infections and childhood asthma risk. We utilised statistical analyses such as Chi-squared and Mann–Whitney U tests, Poisson regression, and machine learning algorithms like K-Nearest Neighbours, Random Forest, and eXtreme Gradient Boosting. Feature importance was assessed using SHapley Additive exPlanations (SHAP) values, ensuring a robust predictive model.",
+      "link": ""
+    },
+    {
+      "title": "Nurturing Minds: How Mum’s Cells Guide Healthy Brain Development",
+      "description": "Our project harnessed scRNA-sequencing data to explore the role of maternal cells in guiding healthy brain development. Seurat facilitated clustering analysis, and differential gene expression analysis was carried out with MAST. RNA sequencing and subsequent bioinformatic analyses, including Welch’s method and bootstrapping, provided insights into the molecular mechanisms. Integrating both scRNA-seq and RNA-seq data enabled a comprehensive understanding of gene expression dynamics.",
+      "link": "https://doi.org/10.1038/s41467-022-32230-2"
     },
     {
       "title": "Maternal Immune Support: Enhancing the Defences of the Baby after Pregnancy",
       "description": "We applied MeDIP-Seq to profile the epigenetics of hematopoietic stem cells (HSC) in offspring exposed to varying levels of maternal immune support. We identified Differentially Methylated Regions (DMRs) and conducted gene ontology analyses using diffreps. For microbiome analysis, we employed degenerate primers and used QIIME for OTU clustering and diversity analysis. Statistical assessments, such as Mann–Whitney-U tests and Spearman correlations, were utilised for robust data interpretation.",
       "link": "https://doi.org/10.1038/s41467-021-24719-z"
+    },
+    {
+      "title": "Maternal Transfer of Pathogen-Specific T Cells Boosts Neonatal Immunity in Mice",
+      "description": "Statistical analyses, including unpaired Students' t-Test, Mann–Whitney-U test, Ordinary one-way ANOVA, and Kruskal–Wallis test, were employed to evaluate the impact of maternal transfer of pathogen-specific T cells on neonatal immunity. Robust regression and outlier removal techniques ensured the reliability of our results.",
+      "link": "https://doi.org/10.15252/embr.202356829"
     },
     {
       "title": "How the First COVID-19 Wave Influenced Early Motherhood in Northern Germany",
@@ -63,19 +73,9 @@
       "link": "https://doi.org/10.3389/fpsyg.2021.805543"
     },
     {
-      "title": "Nurturing Minds: How Mum’s Cells Guide Healthy Brain Development",
-      "description": "Our project harnessed scRNA-sequencing data to explore the role of maternal cells in guiding healthy brain development. Seurat facilitated clustering analysis, and differential gene expression analysis was carried out with MAST. RNA sequencing and subsequent bioinformatic analyses, including Welch’s method and bootstrapping, provided insights into the molecular mechanisms. Integrating both scRNA-seq and RNA-seq data enabled a comprehensive understanding of gene expression dynamics.",
-      "link": "https://doi.org/10.1038/s41467-022-32230-2"
-    },
-    {
-      "title": "Maternal Transfer of Pathogen-Specific T Cells Boosts Neonatal Immunity in Mice",
-      "description": "Statistical analyses, including unpaired Students' t-Test, Mann–Whitney-U test, Ordinary one-way ANOVA, and Kruskal–Wallis test, were employed to evaluate the impact of maternal transfer of pathogen-specific T cells on neonatal immunity. Robust regression and outlier removal techniques ensured the reliability of our results.",
-      "link": "https://doi.org/10.15252/embr.202356829"
-    },
-    {
-      "title": "Predicting Early Respiratory Infections and Childhood Asthma via Fetal Lung Growth",
-      "description": "In our data science-driven approach, we predicted respiratory infections and childhood asthma risk. We utilised statistical analyses such as Chi-squared and Mann–Whitney U tests, Poisson regression, and machine learning algorithms like K-Nearest Neighbours, Random Forest, and eXtreme Gradient Boosting. Feature importance was assessed using SHapley Additive exPlanations (SHAP) values, ensuring a robust predictive model.",
-      "link": ""
+      "title": "Prenatal Modulators and Cognitive Outcomes: A Literature Review",
+      "description": "We systematically examine observational studies, synthesising evidence on how maternal distress and infections impact immune-endocrine adaptations during pregnancy. We delve into the intricacies of brain development in mice and humans, introducing innovative perspectives on the correlation between altered adaptations and cognitive outcomes in offspring. This review offers a comprehensive exploration of the literature, shedding light on the intricate dynamics of prenatal influences on cognitive development.",
+      "link": "https://doi.org/10.3389/fimmu.2018.02186"
     }
   ]
 }
