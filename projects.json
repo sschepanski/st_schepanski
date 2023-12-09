@@ -1,6 +1,11 @@
 {
   "data-science-projects": [
     {
+      "title": "NLP with Disaster Tweets",
+      "description": "Leveraged various Natural Language Processing (NLP) techniques, including tokenization, semantic analysis, and recurrent neural networks, to predict topics within a diverse collection of news articles. Investigated the intricate relationship between linguistic patterns, content semantics, and the accurate classification of articles into distinct topics, contributing to a comprehensive understanding of the dataset.",
+      "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/NLP_Tweets"
+    },
+    {
       "title": "Sleep State Prediction",
       "description": "Conducted exploratory analysis, focusing on minute-based event labelling, identification of missing labels, and detection of duplicate data within series. Utilised logistic regression and random forest models for time series classification. Additionally, experimented with CNN/ResNet models for classification, evaluating their effectiveness in the given context.",
       "link": "https://github.com/sschepanski/data-science-portfolio/tree/main/Sleep_States"
