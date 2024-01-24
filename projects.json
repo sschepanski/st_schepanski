@@ -50,7 +50,7 @@
     {
       "title": "Predicting Early Respiratory Infections and Childhood Asthma via Fetal Lung Growth",
       "description": "In our data science-driven approach, we predicted respiratory infections and childhood asthma risk. We utilised statistical analyses such as Chi-squared and Mann–Whitney U tests, Poisson regression, and machine learning algorithms like K-Nearest Neighbours, Random Forest, and eXtreme Gradient Boosting. Feature importance was assessed using SHapley Additive exPlanations (SHAP) values, ensuring a robust predictive model.",
-      "link": ""
+      "link": "https://doi.org/10.1007/s12519-023-00782-y"
     },
     {
       "title": "Nurturing Minds: How Mum’s Cells Guide Healthy Brain Development",
